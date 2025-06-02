@@ -1,0 +1,297 @@
+%\documentclass[compress]{beamer}
+\documentclass{beamer}
+\colorlet{structure}{green!50!black}
+\mode<article> % only for the article version
+{
+  \usepackage{beamerbasearticle}
+  \usepackage{fullpage}
+  \usepackage{hyperref}
+}
+\beamertemplateshadingbackground{red!10}{blue!10}
+\setbeamertemplate{footline}[page number]
+\usepackage{beamerthemeshadow}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage{colortbl}
+\usepackage[english]{babel}
+% Use some nice templates
+\beamertemplatetransparentcovereddynamic
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\braket}[2]{\left\langle #1 \right| #2 \right\rangle}
+\newcommand{\OP}[1]{{\bf\widehat{#1}}}
+\newcommand{\matr}[1]{{\bf \cal{#1}}}
+\def\d{\text{d}}
+\def\sech{\text{sech}}
+\def\Cdot{\!\cdot\!} 
+\def\e{\text{e}}
+\def\L_2{\L_{2}}
+\def\fm{\:\:\mathrm{fm}^{-1}}
+
+%\newcommand{\braket}[1]{\langle#1\rangle}
+%\newcommand{\Span}{\operatorname{sp}}
+%\newcommand{\tr}{\operatorname{trace}}
+%\newcommand{\diag}{\operatorname{diag}}
+
+\newcommand{\pdiff}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\wedgeprod}[2]{\overset{#2}{\underset{#1}{\wedge}}}
+\newcommand{\directsum}[2]{\overset{#2}{\underset{#1}{\bigoplus}}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Hilb}{{\mathcal{H}}}
+\newcommand{\Proj}{{\mathcal{P}}}
+\newcommand{\Model}{{\mathcal{M}}}
+\newcommand{\CalS}{{\mathcal{S}}}
+\newcommand{\PhiFD}{\Phi^\mathrm{FD}}
+\newcommand{\Ind}{{\mathcal{I}}}
+\newcommand{\rmd}{\mathrm{d}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\eofproof}{\hspace{1em}$\diamondsuit$}
+
+\usetheme{Copenhagen}
+
+\title{Potential national courses in quantum technology, quantum computing and quantum information theory}
+
+\author{Gabriel Balaban, Marianne Bathen, Morten Hjorth-Jensen, Lasse Vines, Francesco P. Massel, S\o lve Selst\o, Susanne Viefers}
+\institute{Kristiania University College, OsloMet University, University of Oslo, University of South-Eastern Norway}
+
+\date{February 2025}
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+\part<presentation>{Main Talk}
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Education and knowledge in quantum science through the development of an advanced national educational program}
+
+The Quantum-TALENT (\underline{T}raining and \underline{A}dvanced
+\underline{L}ectures in \underline{E}mergi\underline{N}g
+\underline{T}echnologies) aims at developing a consistent training and
+educational program at all levels in quantum technology, quantum
+computing and quantum information theory and related topics within  artificial
+intelligence/machine learning (AI/ML) methods for quantum science,
+which will facilitate the development of a workforce with the
+competences and knowledge to meet future technological challenges and
+developments. This could  be done in close collaboration with all
+partners.
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Practical implementations}
+
+
+\begin{block}{}
+\begin{enumerate}
+\item The courses could be listed (in order to enhance visibility) at every institution with own course codes.
+\item Students enlist at their respective institutions for credit accreditation, needs national coordination
+\item Courses can be modularized and taught intensively
+\item Material shared by all institutions
+\item Taught by teachers (experts) at the different institutions
+\item Courses can be taught fully at one institution as regular one-semester courses or taught as intensive courses
+\item Online and in-person attendance
+\item Courses can be taught as regular courses at each institution
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Acronyms}
+
+
+\begin{block}{}
+\begin{enumerate}
+\item QIT= Quantum information theory
+\item QC= Quantum computing
+\item QT=Quantum technology
+\item ML = Machine learning
+\item AI= Artificial intelligence
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Quantum-TALENT: Education for a broader audience}
+
+We have yearslong experience (with research based evidence on what works or not) in developing intensive training courses on ML/AI and QT/QIT/QC.
+
+\begin{block}{}
+\begin{enumerate}
+\item Intensive short courses on selected topics (which can lead to credits and certificates)
+
+\item Certificates of expertise with modules that can add up to one year of credits or more.
+
+\item One-year study (\aa rstudium) in QIT/QC/QT and AI/ML
+
+
+\item Possibilities of adding up to a master specialization in quantum science/technologies with the addition of AI/ML methods
+
+\item Common educational projects and supervision of students
+\end{enumerate}
+
+\noindent
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Universities and academic partners}
+
+\begin{block}{}
+\begin{enumerate}
+\item Department of Physics, University of Oslo
+
+\item Department of Chemistry, University of Oslo
+
+\item Center for Computing in Science Education, University of Oslo
+
+\item Center for Materials Science and Nanotechnology, University of Oslo
+
+\item Hylleraas Center for Quantum Molecular Sciences, University of Oslo
+
+\item Kristiania University College, Oslo, Norway
+
+\item University of South Eastern Norway, Kongsberg, Norway
+
+\item Oslo Metropolitan University 
+
+\item SIMULA research laboratory, planned but not confirmed
+\end{enumerate}
+
+\noindent
+\end{block}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Possible courses that can be offered, courses can be modularized}
+
+\begin{block}{}
+\begin{enumerate}
+\item Review of Quantum physics, with elements from linear algebra and statistics
+\item Basic introduction to QT, QIT and QC. All involved universities offer similar courses
+\item Quantum mechanics (only at UiO as of now)
+\item Quantum Computing and central algorithms, gates, circuits and more
+\item Building a quantum computer
+\item Quantum sensing
+\item Quantum information theory
+\item Quantum machine learning
+\item Several  machine learning/AI courses, at all levels
+\end{enumerate}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{What we have and could be offered as pilots}
+
+\begin{block}{}
+\begin{enumerate}
+\item Introduction to Quantum Technology. These courses have been developed and are taught at  all institutions as of now)
+\item Quantum computing offered at UiO (as three courses, see list below) and  OsloMet. The UiO courses have been taught already as intensive courses at different schools. 
+\item Quantum physics and quantum mechanics, only at UiO
+\item Introduction to machine  learning and advanced machine learning, courses at UiO. These have already been taught as intensive courses at several schools.
+\end{enumerate}
+
+\end{block}
+\end{frame}
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Structure of courses}
+
+These courses address many central concepts, such as quantum
+mechanical superposition, entanglement, QT applications, and many
+different methods and algorithms for AI and machine learning, covering
+both supervised and unsupervised learning as well as central
+discriminative and generative deep learning methods. Programming is
+indispensable in all courses and course participants learn to
+study complicated problems which require knowledge and skills
+necessary for educating a modern workforce. Many of these courses
+focus also on teamwork, project management, and communication.
+\end{frame}
+
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Existing programs/courses; Kristiania University College}
+
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Existing programs/courses; OsloMET university}
+
+\end{frame}
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Existing programs/courses; University of South-Eastern Norway}
+
+\end{frame}
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Existing programs, UiO}
+
+At the university of Oslo we have now established several educational
+programs in AI and QTs and quantum science. These programs span the
+whole spectrum from beginners courses to advanced training and
+education tailored to the specific needs of the participants.
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Study program addressing Quantum Technologies and AI}
+
+\begin{block}{}
+\begin{enumerate}
+\item The Physics and Astronomy bachelor program \href{{https://www.uio.no/studier/program/fysikk-astronomi}}{\nolinkurl{https://www.uio.no/studier/program/fysikk-astronomi}} at the University of Oslo offers from fall 2024 a study direction in \textbf{Quantum Technologies}
+
+\item The Master of Science program in \href{{https://www.uio.no/english/studies/programmes/computational-science-master/}}{\nolinkurl{https://www.uio.no/english/studies/programmes/computational-science-master/}} Computational Science offers a study direction in Quantum Science and Technology in the Computational Science program, start fall 2025
+
+\item The Master of Science program in Physics offers a study direction in Quantum Technologies and Quantum Science, start fall 2025
+
+\item PhD research on AI/machine learning, quantum technologies and quantum science
+
+\item In addition there are many introductory and advanced courses in machine learning and AI.
+\end{enumerate}
+
+\noindent
+\end{block}
+\end{frame}
+
+
+\begin{frame}[plain,fragile]
+\frametitle{Courses at UiO}
+
+\begin{block}{}
+\begin{enumerate}
+\item FYS1400--Introduction to Quantum Technology
+\item FYS3405--Kondenserte fasers fysikk og kvantematerialer
+\item FYS3415--Kvantedatamaskiner og kvanteinformasjon
+\item FYS5419--Quantum computing and quantum machine learning
+\item MAT3420--Quantum Computing
+\item MAT4430--Quantum information theory
+\item FYS-STK4155--Applied Data Analysis and Machine Learning
+\item FYS5429--Advanced machine learning and data analysis for the physical sciences
+\end{enumerate}
+
+\end{block}
+\end{frame}
+
+
+
+
+
+
+\end{document}
+
+
