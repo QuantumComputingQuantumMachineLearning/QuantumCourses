@@ -180,13 +180,13 @@ All educational material will be freely available to students from all
 Norwegian universities. The material will be shared by teachers from
 the different universities, allowing thereby for a continuous upgrade
 of the educational material.  To achieve this, all courses, with
-source material such as jupyter-notebooks, lecture notes and more,
-will be available via repositories like GitHub or GitLab.
+source material such as jupyter-notebooks, codes, lecture notes and more,
+will be available via repositories like GitHub and/or GitLab.
 
 
 \subsection{Relevance to society}
-As stated above, quantum technologies are expected to play a significant role, now and in the coming years. Preparing the ground for a quantum-ready workforce is thus of strategic interests for Norwegian industry and the society as a whole. 
-The educational material will at a later stage be tailored for short intensive courses which will be offered to participants from the both the public and private sectors. 
+As stated above, quantum technologies are expected to play a significant role, now and in the coming years. Preparing the ground for a quantum-ready workforce is thus of strategic interest for Norwegian industry and the society as a whole. 
+The educational material will at a later stage be tailored for short intensive courses which will be offered to participants from both the public and private sectors. 
 
 \subsection{Environmental impact, ethical perspectives, recruitment of women/gender balance }
 
@@ -247,10 +247,10 @@ strategies that create an inclusive and supportive educational
 environment. Key practices include we will address are:
 
 \begin{itemize}
-\item Inclusive Pedagogy: Instructors should employ teaching methods that actively engage and support students of all genders and backgrounds.
-\item Mentorship and Role Models: Establishing mentorship programs has the potential to  significantly support women in quantum technology pathways. Connecting female graduate students with experienced mentors – faculty, alumni, or industry professionals – provides guidance, networking, and moral support. 
-\item Outreach and Recruitment Initiatives: A long-term strategy for gender balance is to strengthen the pipeline of women entering quantum studies. 
-\item Supportive Community and Policies: Fostering an equitable environment also means establishing a culture that actively supports diversity and inclusion. 
+\item Inclusive pedagogy: Instructors should employ teaching methods that actively engage and support students of all genders and backgrounds.
+\item Mentorship and role models: Establishing mentorship programs has the potential to  significantly support women in quantum technology pathways. Connecting female graduate students with experienced mentors – faculty, alumni, or industry professionals – provides guidance, networking, and moral support. 
+\item Outreach and recruitment initiatives: A long-term strategy for gender balance is to strengthen the pipeline of women entering quantum studies. 
+\item Supportive community and policies: Fostering an equitable environment also means establishing a culture that actively supports diversity and inclusion. 
 \end{itemize}
 
 
@@ -286,14 +286,15 @@ All courses correspond to 10 credits (ECTS). However, as mentioned, some of them
 \textbf{Learning Outcomes:}
 \begin{itemize}
 \item Understand the fundamental concepts of quantum computation, including qubits, superposition, entanglement, and the postulates of quantum mechanics relevant to computing.
-\item Design and analyze quantum logic circuits using standard quantum gates (Hadamard, Pauli-X/Y/Z, CNOT, etc.) to carry out computational tasks and simple algorithms.
+\item Design and analyze quantum logic circuits using standard quantum gates (Hadamard, Pauli-$XYZ$, CNOT, etc.) to carry out computational tasks and simple algorithms.
 \item Explain and apply major quantum algorithms such as Shor’s factoring algorithm and Grover’s search algorithm, and evaluate their complexity and speedups relative to classical algorithms for the same problems.
 \item Compare quantum and classical computational power and complexity (e.g., understanding the \textit{bounded-error quantum polynomial time}-class (BQP) and how it relates to classical complexity classes), articulating the theoretical capabilities and limits of quantum computers.
 \item Describe the principles of quantum error correction and discuss the impact of decoherence and noise on quantum computations, along with basic strategies for error mitigation and fault tolerance.
 \item Develop and run simple quantum programs using contemporary quantum software tools (such as Qiskit or Cirq), gaining hands-on experience with implementing quantum circuits and observing their outputs.
+\item Being able to implement parametrized quantum circuits like the Variational Quantum Eigensolver for eigenvalue problems
 \end{itemize}
-
-\textbf{Key Topics:}
+\begin{comment}
+    \textbf{Key Topics:}
 \begin{itemize}
 \item Qubits and quantum states; representation of information in two-level quantum systems (Bloch sphere, state vectors, Dirac notation).
 \item Quantum logic gates and the circuit model of computation; universal gate sets and circuit complexity.
@@ -302,7 +303,7 @@ All courses correspond to 10 credits (ECTS). However, as mentioned, some of them
 \item Introduction to quantum error correction (simple codes like bit-flip and phase-flip codes, Shor’s code) and the effects of decoherence on computational reliability.
 \item Practical quantum programming and experimentation using simulators or cloud-based quantum processors (writing and executing small quantum circuits).
 \end{itemize}
-
+\end{comment}
 \subsection{Course 2: Quantum Information Theory, 10 ECTS}
 
 \textbf{Description:} This course delves into the theoretical foundations of information science in the quantum domain. It examines how information is quantified, transmitted, and protected when using quantum states in place of classical bits. Students will study the quantum analogues of classical information concepts and learn how quantum mechanics enables new communication and cryptographic protocols that have no classical counterpart. Key topics include quantum entropy and information measures, the role of entanglement as an informational resource, quantum communication protocols like teleportation and superdense coding, and the basics of quantum cryptography and error correction. Through these topics, students will gain a deeper understanding of the limits and possibilities of information processing in quantum systems.
@@ -316,7 +317,7 @@ All courses correspond to 10 credits (ECTS). However, as mentioned, some of them
 \item Describe how quantum noise and decoherence are modeled as quantum channels, and outline how quantum error-correcting codes (such as the Shor code or simple stabilizer codes)\todo{This point is very similar to one included in the QC course. But I suppose some redudancy is fine.} can protect quantum information from errors.
 \item Apply quantum information theory concepts to evaluate the capacity of simple quantum channels and interpret limits like Holevo’s bound that quantify the maximum classical information that can be extracted from quantum states.
 \end{itemize}
-
+\begin{comment}
 \textbf{Key Topics:}
 \begin{itemize}
 \item Quantum state representation and information: qubits vs. classical bits, bra-ket notation, density matrices for mixed states, quantum entropy.
@@ -326,13 +327,13 @@ All courses correspond to 10 credits (ECTS). However, as mentioned, some of them
 \item Quantum cryptography: quantum key distribution (BB84, Ekert protocol), no-cloning theorem and its implications for security, quantum random number generation.
 \item Quantum error correction and quantum channels: noise models (bit-flip, phase-flip, depolarizing channel), simple quantum error-correcting codes, channel capacity concepts (classical capacity of a quantum channel, quantum capacity basics).
 \end{itemize}
-
+\end{comment}
 \subsection{Course 3: Building Quantum Hardware, 10 ECTS}
 
 \textbf{Description:} This course explores the physical realization of
 quantum computers and other quantum information processing
 devices. Students will learn about the leading hardware platforms for
-qubits—such as superconducting circuits, trapped ions, semiconductor
+qubits, such as superconducting circuits, trapped ions, semiconductor
 quantum dots, photonic qubits, and defect centers—and the fundamental
 physics that enables each platform. The curriculum examines how qubits
 are initialized, controlled (manipulated with pulses or fields), and
@@ -354,7 +355,7 @@ design, operate, and evaluate quantum hardware.
 \item Evaluate the challenges and current approaches in scaling quantum processors from a few qubits to many qubits, including issues of inter-qubit connectivity, control signal delivery, fabrication scalability, and modular architectures. Discuss how these challenges are being addressed through techniques like multiplexing, error correction (logical qubits), and networked quantum modules.
 \item Interpret key performance metrics of quantum hardware from technical literature or data sheets (coherence times $T_1$ and $T_2$, gate and readout fidelities, two-qubit gate error rates, qubit counts) and assess what they imply for the capability of the device to run certain algorithms or maintain entanglement over time.
 \end{itemize}
-
+\begin{comment}
 \textbf{Key Topics:}
 \begin{itemize}
 \item Qubit physical platforms: superconducting qubits (transmons, flux qubits) and circuit QED; trapped-ion qubits (linear RF traps, Penning traps); spin qubits in semiconductors (quantum dots, donor spins); photonic qubits (single photons, integrated photonic circuits); nitrogen vacancy (NV) centers and other solid-state defect qubits.
@@ -365,7 +366,7 @@ design, operate, and evaluate quantum hardware.
 \item Hardware-level error correction and mitigation: physical versus logical qubits, implementation of error-correcting codes in hardware (e.g., layout for the surface code, syndrome extraction circuitry), and trade-offs in resource overhead.
 \item Overview of current quantum processors and roadmaps: examples of quantum chip architectures from industry or research (e.g., superconducting processors with 50+ qubits, ion trap systems with shuttling ions), and discussion of performance milestones (quantum volume, error rates approaching fault-tolerance thresholds).
 \end{itemize}
-
+\end{comment}
 \subsection{Course 4: Quantum Metrology and Sensing, 10 ECTS}
 
 \textbf{Description:} This course focuses on leveraging quantum phenomena to achieve ultra-precise measurements and sensing capabilities beyond classical limits. Students will examine how quantum mechanical effects—such as superposition, entanglement, and squeezing—can be utilized to enhance the sensitivity of measurements of time, fields, forces, and other physical quantities. The theoretical component of the course introduces the framework of quantum parameter estimation and the concept of measurement uncertainty in quantum mechanics (including the standard quantum limit and the ultimate Heisenberg limit of precision). On the practical side, the course surveys a range of cutting-edge quantum sensors and metrological devices: atomic clocks that keep time with unprecedented accuracy, interferometric sensors (like those used in gravitational wave detectors) that incorporate quantum light to improve sensitivity, magnetometers and accelerometers using quantum spins or superconducting circuits, and other emerging quantum sensing applications. By the end of the course, students will understand how quantum information concepts translate into superior measurement performance and will appreciate both the potential and the challenges of deploying quantum sensors in real-world scenarios.
@@ -379,7 +380,7 @@ design, operate, and evaluate quantum hardware.
 \item Analyze practical challenges in quantum metrology experiments—such as loss of coherence in entangled states, photon losses in optical systems, or technical noise—and explain methods to address them (for instance, error correction techniques adapted to metrology, active stabilization and feedback control, or entanglement distillation to counteract noise).
 \item Design or evaluate a conceptual quantum sensing experiment for a given application, identifying what quantum resources (entanglement, squeezing, etc.) are required to reach a target sensitivity and discussing how one would implement and measure those resources in practice.
 \end{itemize}
-
+\begin{comment}
 \textbf{Key Topics:}
 \begin{itemize}
 \item Quantum measurement and uncertainty: operators and observables, projective measurements vs. POVMs, uncertainty relations and their implications for measurement precision.
@@ -390,7 +391,7 @@ design, operate, and evaluate quantum hardware.
 \item Noise and error management in sensing: effects of decoherence on sensor performance, photon loss, phase noise; introduction to error mitigation and error correction strategies in the context of metrology (e.g., using entangled states that are robust to certain noise, or feedback stabilization).
 \item Case studies in quantum metrology: e.g., the role of squeezed light in gravitational wave detectors, demonstrations of entanglement-enhanced clock precision, and applications of quantum sensing in domains like biomedical imaging or geoscience.
 \end{itemize}
-
+\end{comment}
 \subsection{Course 5: Quantum Machine Learning, 10 ECTS}
 
 \textbf{Description:} This course examines the intersection of quantum computing and machine learning, exploring how quantum computers could potentially accelerate machine learning tasks and how concepts from machine learning can aid quantum computing research. Students will be introduced to the algorithms and frameworks of quantum machine learning (QML), learning how classical data can be embedded into quantum states and processed through quantum circuits. The course covers quantum-enhanced versions of various learning algorithms—for instance, quantum support vector machines that utilize quantum kernels, quantum algorithms for principal component analysis and linear systems solving, and quantum neural network models implemented as parameterized quantum circuits. It also addresses hybrid quantum-classical approaches (such as variational algorithms) that are central to near-term QML applications. Throughout, an emphasis is placed on understanding both the potential speedups and advantages that quantum computing offers for machine learning, and the practical limitations (hardware noise, qubit constraints, training difficulties) that currently influence this emerging field. Students will gain experience with QML libraries and simulators, preparing them to contribute to research or applications in quantum data science.
@@ -404,20 +405,20 @@ design, operate, and evaluate quantum hardware.
 \item Understand and apply the concept of variational quantum algorithms (like the Variational Quantum Eigensolver and the Quantum Approximate Optimization Algorithm) in machine learning contexts, such as using a hybrid quantum-classical approach to optimize a model or a cost function for classification or clustering.
 \item Critically evaluate the current state of quantum machine learning by reviewing recent literature: identify which scenarios have demonstrated or predict a quantum advantage in learning tasks and articulate the challenges (noise, scalability of training, limited qubit counts) that must be overcome for QML to become practically useful.
 \end{itemize}
-
+\begin{comment}
 \textbf{Key Topics:}
 \begin{itemize}
 \item Data encoding and quantum feature maps: methods to input classical data into quantum computers (one-hot/basis encoding, amplitude encoding, parameterized feature maps) and how these define a feature space for quantum models.
 \item Quantum linear algebra subroutines for ML: quantum algorithms for solving linear systems (the HHL algorithm), eigen-decomposition (quantum principal component analysis), and their relevance to machine learning applications.
 \item Quantum-enhanced learning models: quantum support vector machines (using quantum kernel estimation), quantum clustering and nearest-neighbor algorithms, and quantum recommendation system approaches.
 \item Quantum neural networks and parametrized quantum circuits: designing quantum circuits with tunable parameters as analogues to neural network models, training these circuits (e.g., via gradient descent or other optimizers), and considerations like barren plateaus in the training landscape.
-\item Hybrid quantum-classical algorithms in ML: The \textit{variational quantum eigensolver} (VQE) and \textit{quantum approximate optimizatoin algorithm} (QAOA) as examples of using quantum subroutines within classical optimization loops; applications of these hybrid methods to optimization problems and supervised learning tasks.
+\item Hybrid quantum-classical algorithms in ML: The \textit{variational quantum eigensolver} (VQE) and \textit{quantum approximate optimizato in algorithm} (QAOA) as examples of using quantum subroutines within classical optimization loops; applications of these hybrid methods to optimization problems and supervised learning tasks.
 \item QML software frameworks and tools: introduction to libraries such as TensorFlow Quantum, PennyLane, or Qiskit Machine Learning, which enable the simulation and integration of quantum models into classical machine learning workflows.
 \item Emerging applications and case studies: discussion of recent demonstrations and research in QML (e.g., quantum-enhanced data classification in chemistry or finance), and an assessment of what future advances are needed to achieve real-world impact.
 \end{itemize}
-
+\end{comment}
 \subsection{Strategy clarification}
-
+The \textit{Quantum-TALENT} program aims at a strategic i
 \textit{Briefly explain how the researcher school reflects and supports the strategic objectives and plans of the applicant institution and how it supports the strategic objectives of any partners.}
 
 
@@ -430,9 +431,11 @@ design, operate, and evaluate quantum hardware.
 -	measures to improve gender balance and diversity, where relevant.}
 
 \subsection{Project manager and project group}
-The project will be lead by Oslo Metropolitan University (OsloMet). In particular, the \textit{OsloMet Quantum Hub} is a significant player in the Norwegian quantum ecosystem. This hub aims to bring together researchers, stakeholders outside of academia and members of the general public with a quantum interest. As such, OsloMet is a very suitable institution for organizing this quantum Research School. However, all institutions are to take part in developing the necessary course material -- and teaching it. This Research School is truly a \textit{joint venture}.
+The project will be lead by Oslo Metropolitan University (OsloMet). In particular, the \textit{OsloMet Quantum Hub} is a significant player in the Norwegian quantum ecosystem. This hub aims to bring together researchers, stakeholders outside of academia and members of the general public with a quantum interest. As such, OsloMet is a very suitable institution for organizing this quantum Research School. The scientific staff is also experienced in organizing large events such as workshops and schools with a large number of participants.
 
-The project manager will be ...
+However, all institutions are to take part in developing the necessary course material -- and teaching it. This work will be distributed more or less uniformly between the participants. This Research School is truly a \textit{joint venture}.
+
+
 
 
 \subsection{Budget}
